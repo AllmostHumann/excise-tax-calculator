@@ -13,8 +13,7 @@
     "react-scripts": "5.0.1",
     "styled-components": "^5.3.6",
     "styled-normalize": "^8.0.7",
-    "web-vitals": "^2.1.4",
-    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.2/xlsx-0.19.2.tgz"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
