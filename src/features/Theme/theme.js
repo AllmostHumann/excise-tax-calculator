@@ -1,3 +1,7 @@
 export const colorNames = {
-  white: "#FFFFFF",
+  colors: {
+    white: "#FFFFFF",
+    acadia: "#1B1404",
+    westar: "#E0DFDC",
+  },
 };
