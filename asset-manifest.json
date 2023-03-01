@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/excise-tax-calculator/static/js/main.0efb020b.js",
+    "static/js/787.8b8feb83.chunk.js": "/excise-tax-calculator/static/js/787.8b8feb83.chunk.js",
+    "index.html": "/excise-tax-calculator/index.html",
+    "main.0efb020b.js.map": "/excise-tax-calculator/static/js/main.0efb020b.js.map",
+    "787.8b8feb83.chunk.js.map": "/excise-tax-calculator/static/js/787.8b8feb83.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.0efb020b.js"
+  ]
+}
