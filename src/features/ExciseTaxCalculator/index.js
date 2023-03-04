@@ -1,6 +1,6 @@
 import { Header } from "../../common/Header/styled";
 import { Container } from "./Container/styled";
-import CSVTable from "./CSVReader/index.";
+import CSVTable from "./CSVReader/Input/index.";
 
 const ExciseTaxCalculator = () => {
   return (
