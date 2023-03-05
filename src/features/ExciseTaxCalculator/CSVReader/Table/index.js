@@ -13,17 +13,13 @@ const MyTable = ({ data }) => {
         accessor: "3",
       },
     ],
-    []
+    [],
   );
 
   const tableInstance = useTable({ columns, data });
-
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    tableInstance;
-
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = tableInstance;
   const [showAllRows, setShowAllRows] = useState(false);
-
-  const visibleRows = showAllRows ? rows : rows.slice(10);
+  const visibleRows = showAllRows ? rows : rows.slice(10, -3);
 
   const toggleRows = () => {
     setShowAllRows((prevState) => !prevState);
@@ -32,7 +28,7 @@ const MyTable = ({ data }) => {
   return (
     <div>
       <button onClick={toggleRows}>
-        {showAllRows ? "Hide Rows" : "Show All Rows"}
+        {showAllRows ? "Ukryj zbędne wiersze" : "Pokaż wszystkie wiersze"}
       </button>
       <table {...getTableProps()}>
         <thead>
