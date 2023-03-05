@@ -16,18 +16,24 @@ const MyTable = ({ data }) => {
     []
   );
 
-  const [hiddenRows, setHiddenRows] = useState([]);
-
   const tableInstance = useTable({ columns, data });
 
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     tableInstance;
 
-  const visableRows = rows.filter((row) => !hiddenRows.includes(row.id));
+  const [showAllRows, setShowAllRows] = useState(false);
+
+  const visibleRows = showAllRows ? rows : rows.slice(10);
+
+  const toggleRows = () => {
+    setShowAllRows((prevState) => !prevState);
+  };
 
   return (
     <div>
-      <button onClick={() => setHiddenRows([])}>Show All Rows</button>
+      <button onClick={toggleRows}>
+        {showAllRows ? "Hide Rows" : "Show All Rows"}
+      </button>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -39,7 +45,7 @@ const MyTable = ({ data }) => {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {visableRows.slice(10).map((row) => {
+          {visibleRows.map((row) => {
             prepareRow(row);
             return (
               <tr {...row.getRowProps()}>
