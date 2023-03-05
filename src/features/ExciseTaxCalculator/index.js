@@ -7,8 +7,8 @@ const ExciseTaxCalculator = () => {
   return (
     <Container>
       <Header>Excise Tax Calculator for Beer</Header>
-      <CSVTable />
       <FindSymbol />
+      <CSVTable />
     </Container>
   );
 };

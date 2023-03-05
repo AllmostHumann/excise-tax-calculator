@@ -5,6 +5,10 @@ const MyTable = ({ data }) => {
   const columns = useMemo(
     () => [
       {
+        Header: "Lp.",
+        accessor: "0",
+      },
+      {
         Header: "Nazwa piwa",
         accessor: "2",
       },
@@ -13,11 +17,12 @@ const MyTable = ({ data }) => {
         accessor: "3",
       },
     ],
-    [],
+    []
   );
 
   const tableInstance = useTable({ columns, data });
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } = tableInstance;
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    tableInstance;
   const [showAllRows, setShowAllRows] = useState(false);
   const visibleRows = showAllRows ? rows : rows.slice(10, -3);
 
@@ -44,7 +49,7 @@ const MyTable = ({ data }) => {
           {visibleRows.map((row) => {
             prepareRow(row);
             return (
-              <tr {...row.getRowProps()}>
+              <tr {...row.getRowProps({ id: row.id })}>
                 {row.cells.map((cell) => (
                   <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
                 ))}
