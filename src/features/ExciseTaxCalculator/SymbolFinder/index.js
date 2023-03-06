@@ -1,5 +1,5 @@
 const FindSymbol = () => {
-  const text = "American Pale ale 13,75° but. 0,5 l";
+  const text = "American Pale 13,75° but. 0,5 l";
 
   const getSymbol = ({ text }) => {
     const symbolIndex = text.indexOf("°");
