@@ -22,7 +22,9 @@ function CSVTable() {
   return (
     <>
       <Input type="file" onChange={handleFileUpload} />
-      <div>{data && <MyTable data={data} />}</div>
+      <div>
+        {data && <MyTable data={data} />}        
+      </div>
     </>
   );
 }
