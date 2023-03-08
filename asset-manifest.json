@@ -1,12 +1,15 @@
 {
   "files": {
-    "main.js": "/excise-tax-calculator/static/js/main.93644677.js",
+    "main.css": "/excise-tax-calculator/static/css/main.bd1fecff.css",
+    "main.js": "/excise-tax-calculator/static/js/main.82714f02.js",
     "static/js/787.8b8feb83.chunk.js": "/excise-tax-calculator/static/js/787.8b8feb83.chunk.js",
     "index.html": "/excise-tax-calculator/index.html",
-    "main.93644677.js.map": "/excise-tax-calculator/static/js/main.93644677.js.map",
+    "main.bd1fecff.css.map": "/excise-tax-calculator/static/css/main.bd1fecff.css.map",
+    "main.82714f02.js.map": "/excise-tax-calculator/static/js/main.82714f02.js.map",
     "787.8b8feb83.chunk.js.map": "/excise-tax-calculator/static/js/787.8b8feb83.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.93644677.js"
+    "static/css/main.bd1fecff.css",
+    "static/js/main.82714f02.js"
   ]
 }
