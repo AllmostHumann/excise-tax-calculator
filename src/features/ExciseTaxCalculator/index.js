@@ -1,14 +1,14 @@
 import { Header } from "../../common/Header/styled";
 import { Container } from "./Container/styled";
-import CSVTable from "./CSVReader/Input/index.";
+import CSVImport from "./CSVReader/Input/index.";
 import FindValue from "./ValueSearch";
 
 const ExciseTaxCalculator = () => {
   return (
     <Container>
-      <Header>Excise Tax Calculator for Beer</Header>
+      <Header>Excise Tax Calculator for Beer in Poland</Header>
       <FindValue />
-      <CSVTable />
+      <CSVImport />
     </Container>
   );
 };
