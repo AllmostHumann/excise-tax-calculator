@@ -18,7 +18,7 @@ const CSVImport = () => {
           .map((row) => {
             return [row[0], row[2], row[3]];
           })
-          .slice(10);
+          .slice(10, -3);
         setRowData(parsedData);
         console.log(parsedData);
       },
