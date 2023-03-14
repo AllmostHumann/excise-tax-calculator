@@ -5,7 +5,7 @@ import "ag-grid-community/styles/ag-theme-alpine.css"; // Optional theme CSS
 
 const AgGrid = ({ rowData }) => {
   const [columnDefs] = useState([
-    { headerName: "Lp.", field: "0" , width: 100},
+    { headerName: "Lp.", field: "0" , width: 80},
     { headerName: "Nazwa", field: "1" , width: 400},
     { headerName: "Ilość", field: "2" , width: 100},
   ]);
@@ -18,8 +18,9 @@ const AgGrid = ({ rowData }) => {
     };
   }, []);
 
+  
   return (
-    <div className="ag-theme-alpine" style={{ width: 1000, height: 1000 }}>
+    <div className="ag-theme-alpine" style={{ width: 700, height: 1000 }}>
       <AgGridReact
         rowData={rowData}
         columnDefs={columnDefs}
